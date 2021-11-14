@@ -1,24 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router';
 import './App.css';
+import { MainForm } from './components/MainForm/MainForm';
+import { UsersListPage  } from './components/UsersLIstPage/UsersLIstPage';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className = "wrapper">
+      <Routes>
+        <Route path="/" element = {<MainForm/>} />
+        <Route path="/users" element = {<UsersListPage/>} />
+      </Routes>
     </div>
   );
 }

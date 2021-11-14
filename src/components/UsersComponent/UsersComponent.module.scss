@@ -1,0 +1,23 @@
+.container {
+  height: 50px;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: rgb(13, 153, 218);
+
+  border-radius: 7px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 4px rgb(142, 27, 209);
+  }
+}
+
+a {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: rgb(54, 63, 2);
+}
